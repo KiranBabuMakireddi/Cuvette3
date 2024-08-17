@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function () {
             if (button.innerHTML == '.' || button.innerHTML == 'x' || button.innerHTML == '/' ) {
                 Display.value += button.innerHTML;
-            } else if (Display.value === '0' && (button.innerHTML !== '.' && button.innerHTML !== '0')) {
+            } else if (Display.value === '0' && (button.innerHTML !== '.')) {
                 Display.value = button.innerHTML;
             } else {
                 Display.value += button.innerHTML;
